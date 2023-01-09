@@ -1,3 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-  background-color: black;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	padding: 25px 15px;
+	flex-wrap: wrap;
+	gap: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+}
+
+.perfil {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.perfil picture {
+	display: block;
+	border: 3px solid white;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+.perfil img {
+	width: 100%;
+}
+
+.perfil h1 {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.perfil p {
+	font-size: 0.8em;
+	margin-top: 10px;
+}
+
+.links {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.links .link {
+	border: 2px solid white;
+	width: 100%;
+	height: 50px;
+	border-radius: 50px;
+}
+
+.link a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	margin-top: 23px;
+	transform: translateY(-50%);
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.social-media {
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-media div {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.social-media a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.social-media .social-facebook {
+  background-image: url('../assets/facebook.svg');
+}
+
+.social-media .social-instagram {
+  background-image: url('../assets/instagram.svg');
+}
+
+.social-media .social-twitter {
+  background-image: url('../assets/twitter.svg');
+}
+
+.social-media .social-tiktok {
+  background-image: url('../assets/tiktok.svg');
+}
+
+.social-media .social-pizza {
+  background-image: url('../assets/pizza.svg');
+}
+
+@media only screen and (min-width: 475px) {
+	main {
+		width: 445px;
+		gap: 80px;
+		font-size: 1.5em;
+	}
+
+	.perfil picture {
+		width: 120px;
+		height: 120px;
+	}
 }
